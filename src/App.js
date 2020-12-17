@@ -12,7 +12,7 @@ import Rank from "./components/rank/Rank";
 import "tachyons";
 
 const app = new Clarifai.App({
-  apiKey: "799cf64b63b5457ba41a409dc5fd4dc2",
+  apiKey: process.env.REACT_APP_CLARIFAI_API_KEY,
 });
 
 const particlesOptions = {
